@@ -11,7 +11,3 @@ func _ready():
 	heroNode = hero.instance()
 	stageNode.add_child(heroNode)
 	heroNode.position = positionNode.position
-
-func _process(delta):
-	stageNode.position = heroNode.position * -1
-	sceneNode.position = heroNode.position
